@@ -24,4 +24,5 @@ def contact():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    is_dev = os.getenv("FLASK_ENV", "development") != "production"
+    app.run(debug=is_dev)

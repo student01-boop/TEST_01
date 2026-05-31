@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: vibecodingschool
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true   # Render가 자동 생성
+      - key: DATABASE_URL
+        sync: false           # 대시보드에서 직접 입력
