@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}홈 — 바이브코딩스쿨{% endblock %}
+
+{% block content %}
+
+<!-- 히어로 섹션 -->
+<section class="hero text-center">
+  <div class="container">
+    <h1 class="mb-4">바이브코딩스쿨 🚀</h1>
+    <p class="mb-5">누구나 쉽게 배우는 실전 코딩 교육 플랫폼<br>파이썬부터 웹 개발까지, 지금 바로 시작하세요.</p>
+    <a href="/about" class="btn btn-light btn-lg me-3 fw-semibold">더 알아보기</a>
+    <a href="/contact" class="btn btn-outline-light btn-lg fw-semibold">연락하기</a>
+  </div>
+</section>
+
+<!-- 특징 카드 -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">왜 바이브코딩스쿨인가?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm text-center p-4">
+          <div class="fs-1 mb-3">💡</div>
+          <h5 class="fw-bold">실전 중심 커리큘럼</h5>
+          <p class="text-muted">이론보다 실습 위주의 프로젝트 기반 학습으로 빠르게 실력을 키웁니다.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm text-center p-4">
+          <div class="fs-1 mb-3">🧑‍💻</div>
+          <h5 class="fw-bold">현직 개발자 강사</h5>
+          <p class="text-muted">실무 경험이 풍부한 현직 개발자가 직접 강의하고 코드 리뷰를 제공합니다.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm text-center p-4">
+          <div class="fs-1 mb-3">🌐</div>
+          <h5 class="fw-bold">언제 어디서나</h5>
+          <p class="text-muted">온라인으로 언제든지 수강하고, 커뮤니티에서 동료들과 함께 성장하세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
